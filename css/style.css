@@ -204,7 +204,7 @@ section.project {
 }
 section.airbnb {
   background: url('../img/pattern_blue-01.png');
-  background: #e9ffff;
+  /* background: #e9ffff; */
 }
 /* Carousel */
 .container {
@@ -253,11 +253,12 @@ section.airbnb {
   margin-right: 20px;
 }
 .nav {
-    position: absolute;
+    /* position: absolute;
     left: 50%;
-    bottom: -86px;
-    transform: translateX(-50%);
-    padding: 20px;
+    bottom: -86px; */
+    max-width: 50%;
+    transform: translateX(50%);
+    padding: 20px 0px;
     border-radius: 999px;
     background: rgb(255 62 146 / 62%);
     color: white;
@@ -374,7 +375,10 @@ section.skills {
   {
     display: none;
   }
+  header.sticky .toggle.active .close {
 
+    color: #e9ffff;
+  }
   header .toggle.active .close
   {
     display: block;
@@ -389,6 +393,77 @@ section.skills {
     margin: 0 1px;
   }
 
+}
+section.contact {
+  background: #111;
+}
+.formBx {
+  min-width: 60%;
+}
+.formBx form {
+  display: flex;
+  flex-direction: column;
+}
+.formBx form h3,
+.contactInfo h3 {
+  color: #e9ffff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.formBx form input,
+.formBx form textarea {
+  margin-bottom: 20px;
+  padding: 15px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #ff3e92;
+  resize: none;
+}
+.formBx form input[type="submit" ]{
+  max-width: 100px;
+  background: #ff3e92;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #e9ffff;
+  font-weight: 500;
+}
+.contactInfo {
+  min-width: 40%;
+}
+.contactInfoBx {
+  position: relative;
+}
+.contactInfoBx .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.contactInfoBx .box .icon {
+  min-width: 40px;
+  padding-top: 4px;
+  color: #e9ffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 24px;
+}
+.contactInfoBx .box .text {
+  display: flex;
+  margin-left: 2px;
+  font-size: 16px;
+  color: #e9ffff;
+  flex-direction: column;
+  font-weight: 300;
+}
+.contactInfoBx .box .text h3 {
+  color: #ff3e92;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 @media (min-width: 992px)and (max-width: 1107px)  {
   .nav > i {

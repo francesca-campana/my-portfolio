@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- fontawesome !-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Fontawesome -->
@@ -18,6 +19,7 @@
 
   </head>
   <body>
+    <!-- HEADER -->
     <header>
       <a href="#" class="logo">Portfolio</a>
       <div class="toggle" onclick="toggleMenu();">
@@ -33,13 +35,15 @@
           </li>
 
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
         <i class="fas fa-bars burger"></i>
         <i class="fas fa-times close"></i>
       </div>
     </header>
+    <!-- FINE HEADER -->
+    <!-- BANNER -->
     <section class="banner">
       <div class="textBx">
         <h2>Hello World, I'm <br><span>Francesca Campana</span></h2>
@@ -48,6 +52,8 @@
       </div>
 
     </section>
+    <!-- FINE BANNER -->
+    <!-- ABOUT -->
     <section class="about" id="about">
       <div class="heading">
         <h2>About Me</h2>
@@ -70,7 +76,8 @@
         </div>
       </div>
     </section>
-
+    <!-- FINE ABOUT -->
+    <!-- PROJECT -->
     <section class="project" id="project">
       <div class="heading bluemarine">
         <h2>My project</h2>
@@ -120,9 +127,11 @@
         </a>
       </div>
     </section>
+    <!-- FINE PROJECT -->
+    <!-- AIR BNB -->
     <section class="airbnb" id="airbnb">
       <div class="heading">
-        <h2>My Air bnb'project</h2>
+        <h2>My Air bnb's project</h2>
         <p>Applicazione Web ispirata ad Airbnb, formata da Backend (Autenticazione a più ruoli,
           Integrazione Payment Provider) e interfaccia Frontend responsive. Le tecnologie utilizzate sono HTML,
           CSS, Javascript, JQuery, PHP, MySQL, Laravel, Braintree e Algolia.
@@ -143,24 +152,78 @@
                 <img src="img/show_guest.png" alt="">
                 <img src="img/show.png" alt="">
                 <img class="last " src="img/riepilogo_ap.png" alt="">
+                <div class="nav">
+                  <i class="fas fa-circle active first"></i>
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle"></i>
+                  <i class="fas fa-circle last"></i>
+                </div>
               </div>
               <div class="next">
                 <i class="fas fa-angle-right"></i>
               </div>
-              <div class="nav">
-                <i class="fas fa-circle active first"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle last"></i>
-              </div>
+
             </div>
         </div>
       </div>
     </section>
+    <!-- FINE AIR BNB -->
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="heading bluemarine">
+        <h2>Contact me</h2>
+      </div>
+      <div class="content">
+        <div class="contactInfo">
+          <h3>Contact Info</h3>
+          <div class="contactInfoBx">
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="text">
+                <h3>Address</h3>
+                <p>Via San Cesario, 3 73100 Lecce, Italy</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="text">
+                <h3>Phone</h3>
+                <p>+39 334.79.83.586</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="text">
+                <h3>Email</h3>
+                <p>franx3rox@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="formBx">
+          <form>
+            <h3>Message me</h3>
+            <input type="text" name="" placeholder="Full Name">
+            <input type="email" name="" placeholder="Email">
+            <textarea name="name" rows="8" cols="80" placeholder="Your Message"></textarea>
 
+            <input type="submit" name="" value="Send">
+          </form>
+
+        </div>
+      </div>
+    </section>
+    <!-- FINE CONTACT -->
+    <!-- JS -->
     <script src="js/main.js"></script>
   </body>
 </html>
