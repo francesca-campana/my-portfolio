@@ -176,7 +176,8 @@ section.project .heading.bluemarine a {
 }
 .project .content a .projectBx {
   padding: 40px 20px;
-  margin: 41px;
+  margin-left: 41px;
+  margin-bottom: 41px;
   max-width: 330px;
   text-align: center;
   transition: 0.5s;
@@ -395,8 +396,8 @@ footer h2 {
     font-size: 1.5em;
   }
   .project .content a .projectBx {
+    margin-left: 0;
     margin-bottom: 41px;
-    margin:0;
   }
   .next {
     margin-left: 0;
