@@ -434,9 +434,20 @@ section.skills {
 
 /* Media query */
 @media (max-width:747px) {
+
   .nav {
     display:none;
   }
+  /* section.banner {
+    padding: 20px 20px;
+  } */
+  .banner {
+    align-items: flex-end;
+  }
+  .textBx h2 {
+    font-size: 1.5em;
+  }
+
   section.contact .content {
     flex-direction: column;
   }
@@ -509,6 +520,9 @@ section.skills {
   }
   .nav > i {
     margin: 0 1px;
+  }
+  section {
+    padding: 50px 50px;
   }
   section.about .content {
     flex-direction: column-reverse;
