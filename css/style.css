@@ -377,7 +377,8 @@ footer h2 {
 /* Media query */
 @media (max-width:747px) {
   header,
-  header.sticky {
+  header.sticky
+  {
     padding: 20px 20px;
     z-index: 999;
   }
@@ -385,10 +386,26 @@ footer h2 {
   .nav {
     display:none;
   }
-  section.banner {
+  /* section.banner {
     padding: 20px 20px;
     transition: 5s;
   }
+  section.about {
+    padding: 20px 20px;
+    transition: 5s;
+  }
+  section.project {
+    padding: 20px 20px;
+    transition: 5s;
+  }
+  section.airbnb {
+    padding: 20px 20px;
+    transition: 5s;
+  }
+  section.contact {
+    padding: 20px 20px;
+    transition: 5s;
+  } */
   .banner {
     align-items: flex-end;
   }
@@ -414,6 +431,9 @@ footer h2 {
   }
   section.contact .content .contactInfo {
     margin-bottom: 20px;
+  }
+  .contactSocial {
+    padding-left: 0;
   }
 
 }
