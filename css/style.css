@@ -395,14 +395,12 @@ footer h2 {
 }
 
 /* Media query */
+
 @media (max-width:747px) {
   header,
-  header.sticky
-  {
+  header.sticky {
     padding: 20px 20px;
-    z-index: 999;
   }
-
   .nav {
     display:none;
   }
