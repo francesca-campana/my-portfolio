@@ -123,17 +123,21 @@ section.changeBg {
 section.about .heading h2{
   font-size: 150px;
   color: #ffc7008c;
+  text-shadow: 6px 0px 1px  #e9ffff;
 }
+
 .heading {
   width: 100%;
   text-align: center;
   margin-bottom: 30px;
   color: #ffc700;
+  /* text-shadow: 6px 0px 1px #e9ffff; */
 }
-.heading h2 {
+/* .heading h2 {
    font-weight: 600;
    font-size: 30px;
-}
+   color: #ffc7008c;
+} */
 .content {
   display: flex;
   justify-content: space-between;
@@ -161,11 +165,18 @@ section.project {
   background: #171616;
   /* background: url('../img/pattern_pink-01.png'); */
 }
+section.project .heading.bluemarine h2{
+  font-size: 150px;
+  text-shadow: 6px 0px 1px #ff3e92;
+}
 section.project .heading.bluemarine a {
   color: #ff3e92;
 }
-.heading.bluemarine {
-  color: #e9ffff;
+.heading.bluemarine h2{
+  color:  #e9ffffab;
+}
+.heading.bluemarine p{
+  color:  #e9ffff;
 }
 .project .content {
   display: flex;
@@ -222,6 +233,11 @@ section.airbnb {
 }
 section.airbnb .heading{
   color: #ff3e92;
+}
+section.airbnb .heading h2 {
+  font-size: 150px;
+    color: #ffc7008c;
+    text-shadow: 6px 0px 1px #ff3e92;
 }
 section.airbnb .heading p{
   background: #e9ffffb8;
@@ -290,6 +306,10 @@ section.contact {
 }
 section.contact .content {
   justify-content: flex-start;
+}
+section.contact .heading.bluemarine h2{
+  font-size: 150px;
+  text-shadow: 6px 0px 1px #ff3e92;
 }
 .contactInfo {
   min-width: 40%;
@@ -507,9 +527,20 @@ footer h2 {
   section.about .content {
     flex-direction: column-reverse;
   }
-  section.about .heading h2{
+  section.about .heading h2
+  {
     font-size: 60px;
-    color: #ffc7008c;
+    text-shadow: 2px -1px 1px #e9ffff;
+  }
+  section.airbnb .heading h2 {
+    font-size: 60px;
+    text-shadow: 4px 0px 1px #ff3e92;
+  }
+  section.contact .heading.bluemarine h2,
+  section.project .heading.bluemarine h2
+  {
+    font-size: 60px;
+    text-shadow: 4px 0px 1px #ff3e92;
   }
 
   .contactSocial .social {
